@@ -1,33 +1,23 @@
 <template>
-  <h1>{{ msg }}</h1>
-
-  <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">
-      Vite Documentation
-    </a>
-    |
-    <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Documentation</a>
-  </p>
-
-  <button @click="state.count++">count is: {{ state.count }}</button>
-  <p>
-    Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
-  </p>
+  <div class="this">
+    <size-text class="msg">你已经看到了这个组件了</size-text>
+  </div>
 </template>
 
-<script setup>
-import { defineProps, reactive } from 'vue'
-
-defineProps({
-  msg: String
-})
-
-const state = reactive({ count: 0 })
-</script>
-
 <style scoped>
-a {
-  color: #42b983;
+.this {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.this > .msg {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 1vw;
+  display: block;
+  left: 50%;
+  top: 50%;
 }
 </style>

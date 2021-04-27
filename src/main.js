@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 import App from './App.vue' // 引入入口页面
-import Component from './component/index.js' // 引入组件库
+import Component from './components/index.js' // 引入组件库
 
 const // 创建对象
     routes = [
