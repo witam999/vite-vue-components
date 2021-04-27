@@ -4,8 +4,6 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import App from './App.vue' // 引入入口页面
 import Mod from './components/index.js' // 引入组件库
 
-console.log(Mod);
-
 const // 创建对象
     routes = [
         {
@@ -19,5 +17,3 @@ const // 创建对象
 app.use(createRouter({ history: createWebHashHistory(), routes })) // 导入路由
     .use(Mod) // 导入组件库
     .mount('#app')
-
-console.log(app);
