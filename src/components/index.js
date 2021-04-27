@@ -28,12 +28,11 @@ const // 创建对象
 export function install(Vue) {
     if (install.installed) { return }
     mod.forEach($ => Vue.component($.name, $))
-    window.$sapi = api // 挂载到window
-    Vue.config.globalProperties.$sapi = window.$sapi // 再挂载到原型链
+    Vue.config.globalProperties.$sapi = api // 再挂载到原型链
 }
 
-// 判断是否是直接引入文件
-if (typeof window !== 'undefined' && window.Vue) install(window.Vue)
+// // 判断是否是直接引入文件
+if (typeof window !== 'undefined' && window.Vue) { install(window.Vue) }
 
 // 导出
 export default { install, ...mod }

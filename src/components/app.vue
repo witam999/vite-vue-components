@@ -37,7 +37,6 @@ export default {
     page.position = "relative"; // 注入定位模式
     page.fontSize = "0vw";
 
-    window.$sapi.phone = window.screen.height > window.screen.width; // 判断屏幕是不是竖屏设备
     this.SetBackground(); // 调用背景设置
   },
 

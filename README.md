@@ -1,24 +1,8 @@
-# hello-world
+# Vite下的Vue组件开发
 
-## Project setup
+## 项目设置
+```Shell
+npm install # 安装依赖
+npm run dev # 启动服务
+npm run lib # 打包组件
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -5,9 +5,9 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   build: {
     lib: {
-      formats: ['cjs'],
+      formats: ['umd'],
       entry: path.resolve(__dirname, 'src/components/index.js'),
-      name: 'components'
+      name: 'Mod'
     },
     cssCodeSplit: false // 禁用CSS拆分
   },
